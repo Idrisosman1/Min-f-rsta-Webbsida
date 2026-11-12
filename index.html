@@ -1,10 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <head>
-    <title>Min första hemsida</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitt studentliv</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hej världen!</h1>
-    <p>Jag lär mig Git och HTML.</p>
+  <header>
+    <h1>Mitt studentliv</h1>
+    <p>Min första webbsida i Interaktiva gränssnitt.</p>
+  </header>
+  <nav>
+    <a href="#om">Om mig</a>
+    <a href="#studier">Studier</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <main>
+    <section id="om">
+      <h2>Om mig</h2>
+      <p>Jag studerar interaktionsdesign och lär mig HTML och CSS.</p>
+      <h3>Mitt mål</h3>
+      <p>Jag vill skapa <strong>användarvänliga</strong> webbsidor och lär mig genom att <em>testa själv</em>.</p>
+    </section>
+    <section id="studier">
+      <h2>Det här lär jag mig</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Git</li>
+      </ul>
+      <h3>Så arbetar jag</h3>
+      <ol>
+        <li>Skriver kod i VS Code</li>
+        <li>Sparar filen</li>
+        <li>Testar i webbläsaren</li>
+      </ol>
+      <article>
+        <h3>Min första kod</h3>
+        <p>Så här ser en HTML-rubrik ut:</p>
+        <pre><code>&lt;h1&gt;Hej världen!&lt;/h1&gt;</code></pre>
+      </article>
+    </section>
+    <section>
+      <h2>Mitt studieschema</h2>
+      <table>
+        <caption>Exempel på en studievecka</caption>
+        <thead>
+          <tr><th>Dag</th><th>Aktivitet</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Måndag</td><td>HTML</td></tr>
+          <tr><td>Tisdag</td><td>CSS</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <aside>
+      <h2>Tips</h2>
+      <blockquote>Ta ett steg i taget och testa det du lär dig.</blockquote>
+      <p>Läs mer på <a href="https://developer.mozilla.org/">MDN Web Docs</a>.</p>
+    </aside>
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <form>
+        <label for="namn">Namn:</label>
+        <input type="text" id="namn" name="namn">
+        <label for="meddelande">Meddelande:</label>
+        <textarea id="meddelande" name="meddelande"></textarea>
+        <button type="button">Skicka</button>
+      </form>
+      <small>Formuläret är bara ett exempel och skickar inget.</small>
+    </section>
+  </main>
+  <footer>
+    <p>Skapad som en övning i HTML och CSS.</p>
+  </footer>
 </body>
 </html>
